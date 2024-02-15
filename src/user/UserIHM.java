@@ -221,7 +221,7 @@ public class UserIHM extends javax.swing.JFrame {
                 double price = Double.parseDouble(priceText.substring(0, priceText.length() - 3));
 
                 // Now you can pass the extracted information to the PayerIHM or perform any other necessary action
-                PayerIHM payerIHM = new PayerIHM(price, heureDepartPart);
+                PayerIHM payerIHM = new PayerIHM(price, heureDepartPart, loggedInUsername);
                 payerIHM.setVisible(true);
 
                 // Close the current UserIHM
