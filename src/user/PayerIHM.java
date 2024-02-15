@@ -1,4 +1,4 @@
-package TrainReservation;
+package user;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

@@ -7,7 +7,7 @@ import java.sql.Statement;
 import javax.swing.*;
 
 import TrainReservation.AdminIHM;
-import TrainReservation.UserIHM;
+import user.UserIHM;
 
 public class loginIHM extends javax.swing.JFrame {
 

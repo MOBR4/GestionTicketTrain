@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.*;
 
-import TrainReservation.welcomeIHM;
+import user.welcomeIHM;
 
 public class registerIHM extends javax.swing.JFrame {
 
