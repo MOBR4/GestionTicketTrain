@@ -2,6 +2,9 @@ package TrainReservation;
 
 import javax.swing.*;
 
+import Authentification.loginIHM;
+import Authentification.registerIHM;
+
 public class welcomeIHM extends javax.swing.JFrame {
 
     public welcomeIHM() {
