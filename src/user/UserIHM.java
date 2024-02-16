@@ -210,7 +210,6 @@ public class UserIHM extends javax.swing.JFrame {
             if (selectedResult != null) {
                 // Extract the relevant information from the selected result
                 // You can split the string and extract the necessary information to use in your logic
-                System.out.println("Selected Result: " + selectedResult);
                 
                 String[] parts = selectedResult.split(",");
                 String prixPart = parts[1].trim(); // Extracting the Prix ... classe part
@@ -221,7 +220,7 @@ public class UserIHM extends javax.swing.JFrame {
                 double price = Double.parseDouble(priceText.substring(0, priceText.length() - 3));
 
                 // Now you can pass the extracted information to the PayerIHM or perform any other necessary action
-                PayerIHM payerIHM = new PayerIHM(price, heureDepartPart, loggedInUsername);
+                PayerIHM payerIHM = new PayerIHM(price, heureDepartPart, loggedInUsername, depart, destination, classe);
                 payerIHM.setVisible(true);
 
                 // Close the current UserIHM

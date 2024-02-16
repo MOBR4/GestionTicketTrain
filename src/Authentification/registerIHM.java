@@ -1,5 +1,4 @@
-package Authentification;
-
+package authentification;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,16 +7,16 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.*;
 
-import user.welcomeIHM;
+import trainReservation.WelcomeIHM;
 
-public class registerIHM extends javax.swing.JFrame {
+public class RegisterIHM extends javax.swing.JFrame {
 
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JTextField emailField;
     private JTextField telField;
 
-    public registerIHM() {
+    public RegisterIHM() {
         initComponents();
     }
 
@@ -46,7 +45,7 @@ public class registerIHM extends javax.swing.JFrame {
 
         jLabel4.setText("Email:");
 
-        jLabel5.setText("Telephone:");
+        jLabel5.setText("Téléphone:");
 
         registerButton.setText("S'inscrire");
         registerButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,7 +56,7 @@ public class registerIHM extends javax.swing.JFrame {
 
         JButton backButton = new JButton("Retourner");
         backButton.addActionListener(e -> {
-            welcomeIHM obj = new welcomeIHM();
+            WelcomeIHM obj = new WelcomeIHM();
             obj.setVisible(true);
             dispose();
         });
@@ -149,7 +148,7 @@ public class registerIHM extends javax.swing.JFrame {
             st.executeUpdate(sql);
 
             JOptionPane.showMessageDialog(this, "Inscription réussite!");
-            loginIHM loginFrame = new loginIHM();
+            LoginIHM loginFrame = new LoginIHM();
             loginFrame.setVisible(true);
             dispose();
         } catch (Exception e) {

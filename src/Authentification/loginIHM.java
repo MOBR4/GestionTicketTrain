@@ -1,4 +1,4 @@
-package Authentification;
+package authentification;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,17 +6,17 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.*;
 
-import TrainReservation.AdminIHM;
+import administrateur.AdminIHM;
 import user.UserIHM;
 
-public class loginIHM extends javax.swing.JFrame {
+public class LoginIHM extends javax.swing.JFrame {
 
-    public loginIHM() {
+    public LoginIHM() {
         initComponents();
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -42,7 +42,7 @@ public class loginIHM extends javax.swing.JFrame {
             }
         });
 
-        registerButton.setText("Register");
+        registerButton.setText("S'Inscrire");
         registerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 registerButtonActionPerformed(evt);
@@ -51,6 +51,10 @@ public class loginIHM extends javax.swing.JFrame {
 
         registerLabel.setText("Vous n'avez pas de compte ?");
 
+        
+        
+        
+        
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -154,18 +158,16 @@ public class loginIHM extends javax.swing.JFrame {
     }
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        registerIHM obj = new registerIHM();
+        RegisterIHM obj = new RegisterIHM();
         obj.setVisible(true);
         dispose();
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField pass;
     private javax.swing.JTextField user;
-    // End of variables declaration//GEN-END:variables
 }
